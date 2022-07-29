@@ -1,0 +1,71 @@
+body{
+    background-image: url("/Frontend/img/Rec.png") ;
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    height: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    margin-top: 100px;
+    background-color: #2D6EBE;
+    
+}
+.img{
+    margin-left: 600px;
+    margin-top: 50px;
+
+}
+
+.collapse{
+    margin-left: 50px;
+}
+.nav-item{
+    
+    padding: 10px 20px;
+    font-size: 30px;
+    margin-left: 250px;
+}
+
+.docimg{
+    margin-bottom: 40px;
+}
+
+.row{
+    margin-top: 3cm;
+}
+
+.wrti{
+    font-size: 16px;
+    color: aliceblue;
+}
+
+
+.form-outline{
+    
+    margin-right: 15cm;
+}
+#forget{
+    color: aliceblue;
+    
+    margin-right: 10cm;
+    
+}
+#sign{
+    margin-top: 20px;
+}
+
+
+#loginName{
+    margin-top: 5cm;
+}
+#docpic{
+    width: 100%;
+}
+
+
+
+
