@@ -1,0 +1,49 @@
+body{
+    background-image: url("/Frontend/img/Rec.png") ;
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    height: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+    margin-top: 100px;
+    background-color: #2D6EBE;
+    
+}
+
+.collapse{
+    margin-left: 50px;
+}
+.nav-item{
+    
+    padding: 10px 20px;
+    font-size: 30px;
+    margin-left: 300px;
+}
+.img1{
+    margin-left: 90px;
+}
+.card {
+    margin-top: 2cm;
+    margin-left: 4.5cm;
+    width: 40cm;
+    height: 32cm;
+    padding: 5px;
+}
+#im2{
+    height: 31.6cm;
+    border-radius: 30px;
+}
+.row{
+    margin-top: 6cm;
+}
+#pcard{
+    margin-right: 100px;
+}
+#ccc{
+    border-radius: 40px;
+}
