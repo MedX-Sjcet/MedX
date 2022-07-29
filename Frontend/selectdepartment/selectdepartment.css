@@ -1,5 +1,5 @@
 body{
-    background-image: url("/Frontend/img/Rec.png") ;
+    background-image: url("../img/Rec.png") ;
     background-color: #2A3972;
     background-size: cover;
     background-repeat: no-repeat;
