@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,16 +88,16 @@
       <div class="col">
         
         
-        <form>
+        <form action="login.php" method="post">
         <!-- Email input -->
         <div class="form-outline mb-4">
-          <input type="email" id="loginName" placeholder="User Name" class="form-control" />
+          <input type="email" id="loginName" placeholder="User Name" class="form-control" name="username"/>
           
         </div>
       
         <!-- Password input -->
         <div class="form-outline mb-4">
-          <input type="password" id="form2Example2" placeholder="Password" class="form-control" />
+          <input type="password" id="form2Example2" placeholder="Password" class="form-control" name="password"/>
           
         </div>
       
@@ -113,11 +112,7 @@
       
         <!-- Submit button -->
         <a>
-        <button  type="button" class="btn btn-primary btn-block mb-4"  onclick="admin()"  id="sign">Sign in </button>
-      
-        <!-- Register buttons -->
-        
-          </button>
+        <input  type="submit" class="btn btn-primary btn-block mb-4" id="sign" name="submit">
         </a>
         </div>
       </form></div>

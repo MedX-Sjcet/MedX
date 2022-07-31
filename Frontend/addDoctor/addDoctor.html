@@ -62,18 +62,18 @@
                   <h5 class="mb-0">Doctor Details</h5>
                    </div>
                    <div class="card-body">
-                     <form>
+                     <form action="doctordetails.php" method="post">
                     <!-- 2 column grid layout with text inputs for the first and last names -->
                     <div class="row mb-4" id="doc22">
                       <div class="col">
                         <div class="form-outline">
-                          <input type="text" id="form7Example1" placeholder="First Name" class="form-control" style="height: 1cm;" />
+                          <input type="text" name="firstname" id="form7Example1" placeholder="First Name" class="form-control" style="height: 1cm;" />
                           
                         </div>
                       </div>
                       <div class="col">
                         <div class="form-outline">
-                          <input type="text" id="form7Example2" placeholder="Last Name" class="form-control" style="height: 1cm;" />
+                          <input type="text" name="lastname" id="form7Example2" placeholder="Last Name" class="form-control" style="height: 1cm;" />
                           
                         </div>
                       </div>
@@ -82,25 +82,25 @@
                     <!--id-->
 
                     <div class="form-outline mb-4">
-                        <input type="number" id="form7Example4" placeholder="ID" class="form-control" style="height: 2cm;"/>
+                        <input type="number" name="ID" id="form7Example4" placeholder="ID" class="form-control" style="height: 2cm;"/>
   
                       </div>
 
                       <!--Department-->
                       <div class="form-outline mb-4">
-                        <input type="text" id="form7Example4" placeholder="Department Name" class="form-control" style="height: 2cm;"/>
+                        <input type="number" name="department" id="form7Example4" placeholder="Department Name" class="form-control" style="height: 2cm;"/>
   
                       </div>
           
                     <!-- Specialization input -->
                     <div class="form-outline mb-4">
-                      <input type="text" id="form7Example3" placeholder="Specialization" class="form-control" style="height: 2cm;" />
+                      <input type="text" name="specialization" id="form7Example3" placeholder="Specialization" class="form-control" style="height: 2cm;" />
                       
                     </div>
           
                     <!-- Address input -->
                     <div class="form-outline mb-4">
-                      <input type="text" id="form7Example4" placeholder="Address" class="form-control" style="height: 2cm;"/>
+                      <input type="text" name="address" id="form7Example4" placeholder="Address" class="form-control" style="height: 2cm;"/>
 
                     </div>
           
@@ -109,7 +109,7 @@
                     <!-- Number input -->
                     <div class="form-outline mb-4">
                         <div class="md-form">
-                            <input type="text" id="form1" placeholder="Phone Number" class="form-control">
+                            <input type="number" name="phone" id="form1" placeholder="Phone Number" class="form-control">
                             <input type="text" id="form2"  class="form-control"  style="display: none;">
                             
                         </div>
@@ -118,13 +118,13 @@
           
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                        <input type="password" id="form2Example2" placeholder="Password" class="form-control" />
+                        <input type="password" name="password" id="form2Example2" placeholder="Password" class="form-control" />
                     </div>
 
                     <!--Register button-->
 
                            <div class="form-outline mb-4" >
-                           <button type="button" id="rbutton" class="btn btn-primary">Register</button>
+                            <input  type="submit" class="btn btn-primary btn-block mb-4" id="sign" name="register">
                             </div>
 
 
