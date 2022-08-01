@@ -27,23 +27,11 @@ body{
 .img1{
     margin-left: 90px;
 }
-
-.card {
+#sc1{
     margin-top: 2cm;
-    margin-left: 4cm;
-    width: 40cm;
-    height: 34cm;
-    padding: 5px;
+    width: 35cm;
 }
-#im2{
-    height: 33.8cm;
-}
-#docc{
-    margin-left: 12cm;
-}
-#r1{
-    margin-top: 3cm;
-}
-.row{
-    margin-bottom: 3cm;
+
+#r2{
+    margin-top: 1cm;
 }
