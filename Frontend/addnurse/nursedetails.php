@@ -12,7 +12,7 @@ $password = $_POST['password'];
 $conn = mysqli_connect('localhost','root','','hospitalmanagementsystem') or die("connection failed");
 if(!empty($_POST['register'])){ 
     
-    $query="INSERT INTO doctor (`doctor_ID`, `firstname`, `lastname`, `dep_ID`, `specialization`, `address`, `phone`, `password`) VALUES(?,?,?,?,?,?,?,?)";
+    $query="INSERT INTO nurse (`ID`, `firstname`, `lastname`, `dep_ID`, `specialization`, `address`, `phone`, `password`) VALUES(?,?,?,?,?,?,?,?)";
     $stmt=mysqli_stmt_init($conn);
     mysqli_stmt_prepare($stmt,$query);
     mysqli_stmt_bind_param($stmt,"ississis",$ID,$firstname,$lastname,$dep_name,$specialization,$address,$phone,$password);
@@ -22,7 +22,7 @@ if(!empty($_POST['register'])){
 
 }
 else{
-    header("Location: addDoctor.html");
+    header("Location: addnurse.html");
 }
 
 
