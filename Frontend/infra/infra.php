@@ -1,8 +1,8 @@
 <?php
 $conn = mysqli_connect('localhost','root','','hospitalmanagementsystem') or die("connection failed");
-if(isset($_GET['ID'])){
-  $id=$_GET['ID'];
-  $query="DELETE FROM patient WHERE ID=$id";
+if(isset($_GET['patient_ID'])){
+  $patient_ID=$_GET['patient_ID'];
+  $query="DELETE FROM patient WHERE patient_ID=$patient_ID";
   $result=mysqli_query($conn,$query);
   header("Location:infra.php");
   die();
@@ -140,6 +140,8 @@ if(isset($_GET['ID'])){
                                 <th>First Name</th>
                                 <th>Last Name</th>
                                 <th>Department ID</th>
+                                <th>Doctor ID</th>
+                                <th>Nurse ID</th>
                                 <th>Room number</th>
                                 <th>Age</th>
                                 <th>Address</th>
@@ -156,16 +158,18 @@ if(isset($_GET['ID'])){
                   while($row=$result->fetch_assoc()){
                     echo "
                         <tr>
-                            <td>".$row["ID"]."</td>
+                            <td>".$row["patient_ID"]."</td>
                             <td>".$row["firstname"]."</td>
                             <td>".$row["lastname"]."</td>
                             <td>".$row["dep_ID"]."</td>
+                            <td>".$row["doctor_ID"]."</td>
+                            <td>".$row["nurse_ID"]."</td>
                             <td>".$row["room_ID"]."</td>
                             <td>".$row["age"]."</td>
                             <td>".$row["address"]."</td>
                             <td>".$row["phone"]."</td>
                             <td>".$row["password"]."</td>
-                            <td><a class='btn btn-primary btn-sm' href='infra.php?ID=".$row["ID"]."'>Delete</a>
+                            <td><a class='btn btn-primary btn-sm' href='infra.php?ID=".$row["patient_ID"]."'>Delete</a>
                             </td>
                         </tr>
                     ";

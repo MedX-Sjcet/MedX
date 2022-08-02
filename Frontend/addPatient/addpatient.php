@@ -110,7 +110,26 @@
 
                         
                       </div>
-          
+
+                      <!--Doctor-->
+                      <div class="row">
+                        <div class="col-12">
+                        <select name="doc" class="select form-control-lg">
+                          <?php
+                          $conn = mysqli_connect('localhost','root','','hospitalmanagementsystem') or die("connection failed");
+                          $query="SELECT doctor_ID,firstname FROM doctor";
+                          $result=mysqli_query($conn,$query);
+                          while($row=$result->fetch_assoc()){
+                            echo "
+                            <option value='".$row["doctor_ID"]."'>".$row["firstname"]."</option>
+                            ";
+                          }
+                          ?>
+                          </select>
+                          <label class="form-label select-label">Select Doctor</label>
+        
+                        </div>  
+                        </div>
                     <!-- Room no. input -->
                     <div class="form-outline mb-4">
                       <input type="number" name="room" id="form7Example3" placeholder="Room no." class="form-control" style="height: 1cm;" />

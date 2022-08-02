@@ -8,7 +8,6 @@ if(isset($_GET['doctor_ID'])){
   die();
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -107,7 +106,7 @@ while($row=$result->fetch_assoc()){
 ?>
 </table>
       
-</center>
+
              
             <div class="card-block pt-5">
                 <a href="#" class="card-link text-white">
