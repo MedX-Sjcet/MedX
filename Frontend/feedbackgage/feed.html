@@ -72,23 +72,23 @@
       <div class="col">
         
         
-        <form>
+        <form action="feedback.php" method="post">
         <!-- Email input -->
         <div class="form-outline mb-4">
-          <input type="email" id="loginName" placeholder="email" class="form-control" />
+          <input type="email" name="email" id="loginName" placeholder="email" class="form-control" />
           
         </div>
       
         <!-- Password input -->
         <div class="form-outline mb-4">
-          <input type="text" id="form2Example2" placeholder="FeedBack" class="form-control" />
+          <input type="text" name="feedback" id="form2Example2" placeholder="FeedBack" class="form-control" />
           
         </div>
 
         <!--FeedBack submit btn-->
-        <div button type="button" class="btn btn-success">Submit</button>
+        <input  type="submit" class="btn btn-primary btn-block mb-4"  name="submit" value="SUBMIT" style="background-color: rgb(24, 207, 48);">
 
-        </div>
+        
       
         <!-- 2 column grid layout for inline styling -->
         <div class="row ">
@@ -97,7 +97,7 @@
         </div>
       
         <!-- Submit button -->
-        <a href="../Team/team.html" class="btn btn-primary" id="sign" style="background-color: rgb(43, 43, 150);">About The Team</a>
+        <a href="../Team/team.html" class="btn btn-primary" id="sign" style="background-color: rgb(214, 122, 35);">About The Team</a>
         </div>
       </form></div>
 </div>
