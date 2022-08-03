@@ -2,6 +2,8 @@
 $conn = mysqli_connect('localhost','root','','hospitalmanagementsystem') or die("connection failed");
 if(isset($_GET['doctor_ID'])){
   $id=$_GET['doctor_ID'];
+  $sql="DELETE FROM patient WHERE doctor_ID=$id";
+  $res=mysqli_query($conn,$sql);
   $query="DELETE FROM doctor WHERE doctor_ID=$id";
   $result=mysqli_query($conn,$query);
   header("Location:pedia.php");

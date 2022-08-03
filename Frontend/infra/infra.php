@@ -141,7 +141,6 @@ if(isset($_GET['patient_ID'])){
                                 <th>Last Name</th>
                                 <th>Department ID</th>
                                 <th>Doctor ID</th>
-                                <th>Nurse ID</th>
                                 <th>Room number</th>
                                 <th>Age</th>
                                 <th>Address</th>
@@ -162,14 +161,13 @@ if(isset($_GET['patient_ID'])){
                             <td>".$row["firstname"]."</td>
                             <td>".$row["lastname"]."</td>
                             <td>".$row["dep_ID"]."</td>
-                            <td>".$row["doctor_ID"]."</td>
-                            <td>".$row["nurse_ID"]."</td>
+                            <td>".$row["doctor_ID"]."</td>                           
                             <td>".$row["room_ID"]."</td>
                             <td>".$row["age"]."</td>
                             <td>".$row["address"]."</td>
                             <td>".$row["phone"]."</td>
                             <td>".$row["password"]."</td>
-                            <td><a class='btn btn-primary btn-sm' href='infra.php?ID=".$row["patient_ID"]."'>Delete</a>
+                            <td><a class='btn btn-primary btn-sm' href='infra.php?patient_ID=".$row["patient_ID"]."'>Delete</a>
                             </td>
                         </tr>
                     ";
